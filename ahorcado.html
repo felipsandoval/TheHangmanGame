@@ -1,0 +1,29 @@
+<!-- 
+    HTML5 code of the Hangman Game.
+    Made by Felipe Sandoval for 3D Graphics asignature.
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style_ahorcado.css">
+        <script src="ahorcado.js"></script>
+        <audio src="song_ahorcado.mp3" autoplay loop></audio>
+        <title>Hangman - Felipe Sandoval</title>
+        <center>
+            <img src="logo_ahorcado.png" height="250px" width="700px"/>
+        </center>
+    </head>
+    <body>
+        <button class="start_game" type="button" onclick="start(this.button)">
+            J U E G A
+        </button>
+        <center>
+            <img id="vidas" class="ahorcado" src="ahorcado_1.png" height="300px" width="300px"/>
+            <p class="pista" id="adivina"></p>
+            <label id="intro">INTRODUCE TU LETRA </label>
+            <input id= "demo" type="text" name="choice" maxlength="1" minlength="1"/>
+            <input id="prueba" name="intento" type="submit" value="intentar" onclick="doTry()"/>
+        </center>
+    </body>
+</html>
