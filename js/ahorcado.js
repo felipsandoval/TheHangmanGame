@@ -28,7 +28,7 @@ function start() {
     document.getElementById("adivina").innerHTML = visualizar("_ ", random_word.length);
     inicializado = true;
     imagen = document.getElementById("vidas");
-    imagen.src = "ahorcado_1.png";
+    imagen.src = "/img/ahorcado_1.png";
     errores = 0;
     aciertos = 0;
     repetida = false;
