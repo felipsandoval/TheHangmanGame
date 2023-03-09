@@ -6,24 +6,25 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/style_ahorcado.css">
         <script src="js/ahorcado.js"></script>
         <!--<audio src="music/song_ahorcado.mp3" autoplay loop></audio>-->
         <title>Hangman - Felipe Sandoval</title>
-        <center>
+        <centered>
             <img src="img/logo_ahorcado.png" height="250px" width="700px"/>
-        </center>
+        </centered>
     </head>
     <body>
         <button class="start_game" type="button" onclick="start(this.button)">
             J U E G A
         </button>
-        <center>
+        <centered>
             <img id="vidas" class="ahorcado" src="img/ahorcado_1.png" height="300px" width="300px"/>
             <p class="pista" id="adivina"></p>
             <label id="intro">INTRODUCE TU LETRA </label>
             <input id= "demo" type="text" name="choice" maxlength="1" minlength="1"/>
             <input id="prueba" name="intento" type="submit" value="intentar" onclick="doTry()"/>
-        </center>
+        </centered>
     </body>
 </html>
